@@ -1,0 +1,13 @@
+doctype html
+html
+	head
+		title='Markdown to PDF'
+		link(type='text/css', rel='stylesheet', href='/bower_components/dropzone/dist/min/dropzone.min.css')
+		script(src='/bower_components/dropzone/dist/min/dropzone.min.js')
+	body
+		button(type='button', onclick="javascript:location.href='download'") Download
+		    form.dropzone(action='/upload', method='POST', enctype='multipart/form-data')
+		      .fallback
+		        input(type='file', name='fi
+		      input(type='submit')
+

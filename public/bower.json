@@ -1,0 +1,20 @@
+{
+  "name": "MD2PDF",
+  "homepage": "https://github.com/haykin/md2pdf",
+  "authors": [
+    "eunchurn <eunchurn.park@gmail.com>"
+  ],
+  "description": "Markdown to PDF Front-end",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "dropzone": "^4.3.0"
+  }
+}

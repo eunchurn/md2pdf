@@ -1,5 +1,14 @@
-<button type="button" onclick="javascript:location.href='download'">Download</button>
-<form action="upload" method="POST" enctype="multipart/form-data">
-<input type="file" name="files" /><br/>
-<input type="submit" />
-</form>
+doctype html
+html
+	head
+		title='Markdown to PDF'
+		link(type='text/css', rel='stylesheet', href='/bower_components/dropzone/dist/min/dropzone.min.css')
+		script(src='/bower_components/dropzone/dist/min/dropzone.min.js')
+	body
+		h1 Markdown to PDF
+		// button(type='button', onclick="javascript:location.href='download'") Download
+		form.dropzone(action='/upload', method='POST', enctype='multipart/form-data')
+			.fallback
+				input(type='file', name='files')
+		input(type='submit')
+

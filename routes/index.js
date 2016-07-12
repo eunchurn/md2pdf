@@ -9,7 +9,7 @@ exports.index = function(req, res){
 var files = '';
 exports.upload = function(req, res){
 
-    files = req.files.files; // files array
+    files = req.files; // files array
     // fs.rename(files.path,'temp/file.md', function (err) {
     fs.rename(files.path,'temp/'+files.name, function (err) {
         if (err) {
